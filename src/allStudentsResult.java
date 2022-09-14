@@ -147,7 +147,8 @@ public class allStudentsResult extends javax.swing.JFrame {
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         // TODO add your handling code here:
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+//            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/srm","root","thatsmydatabase!51");
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("select *from result");

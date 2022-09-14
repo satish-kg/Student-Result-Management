@@ -132,7 +132,12 @@ public class adminHome extends javax.swing.JFrame {
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 39, 153, -1));
 
         jComboBox2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CSE", "IT", "ECE", "ME", "EEE" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CSE", "IT", "ECE", "ME", "EEE", "CVL" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 79, 153, -1));
 
         jTextField1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -196,6 +201,10 @@ public class adminHome extends javax.swing.JFrame {
         setVisible(false);
         new allStudentsResult().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**
      * @param args the command line arguments

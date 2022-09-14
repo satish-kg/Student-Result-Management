@@ -157,11 +157,6 @@ public class insertNewResult extends javax.swing.JFrame {
         String electronic = jTextField6.getText();
         
         try{
-//            Class.forName("com.mysql.jdbc.Driver");
-//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/srm","root","thatsmydatabase!51");
-//            Statement st = con.createStatement();
-//            st.executeUpdate("insert into student(course,branch,rollNo,name,gender,fatherName) values('"+course+"','"+branch+"','"+rollNo+"','"+name+"','"+gender+"','"+fatherName+"')");
-//            JOptionPane.showMessageDialog(null, "Successfully updated");
             
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/srm","root","thatsmydatabase!51");
